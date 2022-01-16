@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/color.js"></script>
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Color Picker</h1>
+    <h3>Pick your color using RGB slider</h3>
+    <div>
+        <div id="colorBox" style="height: 100px; width: 100px; display: inline-block;"></div>
+        <div style="display: inline-block;">
+            <p>RGB: <span id="redVal">0</span>,<span id="greenVal">0</span>,<span id="blueVal">0</span></p>
+            <p id="colorHex">Hex Code: #<span id="redHex">00</span><span id="greenHex">00</span><span id="blueHex">00</span></p>
+        </div>
+        <div style="display: inline-block;">
+            <label for="red">Red</label>
+            <input type="range" min="0" max="255" value="0" id="red" oninput="change(this)">
+            <label for="red">Green</label>
+            <input type="range" min="0" max="255" value="0" id="green" oninput="change(this)">
+            <label for="red">Blue</label>
+            <input type="range" min="0" max="255" value="0" id="blue" oninput="change(this)">
+        </div>
+    </div>
+</body>
+</html>

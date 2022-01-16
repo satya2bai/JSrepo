@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/index.js"></script>
+    <title>TODO List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="loadList()">
+    <h1>TODO List</h1>
+    <div class="container">
+        <form onsubmit="return addRow(this)">
+            <label for="fname">Title:</label><br>
+            <input type="text" id="task" name="fname"><br><br>
+            <label for="fname">Description:</label><br>
+            <input type="textarea" id="desc" name="desc"><br><br>
+            <input type="submit" value="Add">
+        </form>
+    </div>
+    <div class="container">
+        <table id="tbl1">
+            <tr>
+                <th>S No.</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
