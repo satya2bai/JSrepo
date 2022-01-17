@@ -1,4 +1,75 @@
+/* global style */
 body {
     background-color: #f2f2f2;
-    color:#404040;
+    color:#262626;
+    margin: 0;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+
+.container {
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+}
+
+/* navigation bar */
+.nav-div a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.nav-div li {
+    list-style-type: none;
+    display: inline;
+    padding: 20px 15px;
+}
+
+.nav-div li:hover {
+    background-color: #001a33;
+}
+
+.nav-div {
+    background-color: #00264d;
+    overflow: hidden;
+}
+
+.nav-div ul {
+    padding: 0;
+}
+
+/* color picker */
+#colorBox {
+    height: 6em;
+    width: 6em;
+    background-color: black;
+}
+
+#cp-wrapper div {
+    display: inline-block;
+    overflow: hidden;
+}
+
+#left-box p {
+    text-align: center;
+    margin-left: 1em;
+}
+
+#right-box {
+    margin-bottom: 2em;
+    margin-left: 1em;
+}
+
+/* world clock */
+#clockDisplay {
+    display: none;
+}
+
+#selectZone {
+    padding: 0.5em;
+    border-radius: 0.3em;
+    border-style: none;
+    background-color: #e6e6e6;
+    border-bottom: 2px solid #262626;
+    margin-left: 1em;
 }
